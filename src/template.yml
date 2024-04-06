@@ -1,0 +1,360 @@
+name: '{theme_name}'
+type: '{theme_type}'
+
+tokenColors:
+  - name: 'Keywords and Operators'
+    scope:
+      - 'keyword'
+      - 'storage.modifier'
+    settings:
+      foreground: '{fg_main}'
+      # fontStyle: 'bold'
+
+  - name: 'Strings, constants, numbers, characters'
+    scope:
+      - 'string'
+    settings:
+      foreground: '{fg_main}'
+
+  - name: 'Comments'
+    scope:
+      - 'comment'
+      - 'punctuation.definition.comment'
+    settings:
+      foreground: '{fg_dim}'
+
+  - name: 'Errors'
+    scope:
+      - 'invalid.illegal'
+    settings:
+      foreground: '{red_1}'
+
+  - name: 'Sections and headings'
+    scope:
+      - 'entity.name.section.markdown'
+    settings:
+      foreground: '{fg_main}'
+      fontStyle: 'bold'
+
+  - name: 'Uncolored overrides'
+    scope:
+      - 'entity.name.tag.yaml'
+    settings:
+      foreground: '{fg_main}'
+
+colors:
+  # https://code.visualstudio.com/api/references/theme-color
+  # base colors
+  'contrastActiveBorder': '{border}'
+  'contrastBorder': '{fg_main}'
+  'descriptionForeground': '{fg_main}'
+  'disabledForeground': '{fg_dim}'
+  'errorForeground': '{red_1}'
+  'focusBorder': '{fg_fade}'
+  'background': '{bg_main}'
+  'foreground': '{fg_main}'
+  'icon.foreground': '{fg_main}'
+  'selection.background': '{bg_hl}'
+  'widget.border': '{border}'
+
+  # everything else
+  'activityBar.activeBorder': '{fg_main}'
+  'activityBar.background': '{bg_main}'
+  'activityBar.border': '{bg_main}'
+  'activityBar.foreground': '{fg_main}'
+  'activityBar.inactiveForeground': '{fg_fade}'
+  'activityBarBadge.background': '{bg_main}'
+  'activityBarBadge.foreground': '{fg_main}'
+
+  'badge.background': '{bg_main}'
+  'badge.foreground': '{fg_main}'
+
+  'breadcrumb.focusForeground': '{fg_main}'
+  'breadcrumb.foreground': '{fg_subtle}'
+
+  'button.background': '{bg_main}'
+  'button.foreground': '{fg_main}'
+  'button.hoverBackground': '{bg_main}'
+  'button.secondaryBackground': '{bg_main}'
+  'button.secondaryForeground': '{fg_main}'
+
+  'checkbox.background': '{bg_main}'
+  'checkbox.border': '{border}'
+  'checkbox.foreground': '{fg_main}'
+
+  'debugConsole.infoForeground': '{fg_main}'
+  'debugConsole.sourceForeground': '{fg_main}'
+  'debugConsoleInputIcon.foreground': '{fg_main}'
+
+  'debugIcon.breakpointDisabledForeground': '{fg_dim}'
+  'debugIcon.breakpointForeground': '{fg_main}'
+  'debugIcon.breakpointStackframeForeground': '{fg_main}'
+  'debugIcon.continueForeground': '{fg_main}'
+  'debugIcon.disconnectForeground': '{fg_main}'
+  'debugIcon.pauseForeground': '{fg_main}'
+  'debugIcon.restartForeground': '{fg_main}'
+  'debugIcon.startForeground': '{fg_main}'
+  'debugIcon.stepBackForeground': '{fg_main}'
+  'debugIcon.stepIntoForeground': '{fg_main}'
+  'debugIcon.stepOutForeground': '{fg_main}'
+  'debugIcon.stepOverForeground': '{fg_main}'
+  'debugIcon.stopForeground': '{fg_main}'
+  'debugToolBar.border': '{fg_main}'
+
+  'diffEditor.border': '{fg_main}'
+
+  'dropdown.background': '{bg_main}'
+  'dropdown.border': '{border}'
+  'dropdown.foreground': '{fg_main}'
+  'dropdown.listBackground': '{bg_main}'
+
+  'editor.background': '{bg_main}'
+  'editor.foreground': '{fg_main}'
+  'editor.hoverHighlightBackground': '{bg_main}'
+  'editor.lineHighlightBorder': '{fg_dim}'
+  # 'editor.rangeHighlightBackground': '{bg_hl}'
+  'editor.selectionBackground': '{bg_hl}'
+  'editor.selectionForeground': '{fg_main}'
+  'editorCursor.foreground': '{fg_main}'
+
+  'editor.findMatchBackground': '{bg_hl}'
+  'editor.findMatchBorder': '{fg_main}'
+  'editor.findMatchHighlightBackground': '{bg_main}'
+  'editor.findMatchHighlightBorder': '{fg_main}'
+
+  'editorGroup.border': '{border}'
+  'editorGroupHeader.border': '{bg_main}'
+  'editorGroupHeader.tabsBackground': '{bg_main}'
+  'editorGroupHeader.tabsBorder': '{border}'
+
+  'editorGutter.addedBackground': '{fg_subtle}'
+  'editorGutter.deletedBackground': '{fg_subtle}'
+  'editorGutter.modifiedBackground': '{fg_subtle}'
+
+  'editorHoverWidget.foreground': '{fg_main}'
+
+  'editorIndentGuide.activeBackground1': '{fg_dim}'
+  'editorIndentGuide.background1': '{fg_faint}'
+
+  'editorInlayHint.foreground': '{fg_fade}'
+  'editorInlayHint.background': '{bg_main}'
+
+  'editorLightBulb.foreground': '{fg_main}'
+  'editorLightBulbAutoFix.foreground': '{fg_main}'
+
+  'editorLineNumber.activeForeground': '{fg_main}'
+  'editorLineNumber.foreground': '{fg_fade}'
+
+  'editorLink.activeForeground': '{fg_main}'
+
+  'editorOverviewRuler.border': '{fg_main}'
+
+  'editorStickyScroll.border': '{border}'
+  'editorStickyScrollHover.background': '{bg_main}'
+
+  'editorSuggestWidget.border': '{border}'
+  'editorSuggestWidget.selectedBackground': '{bg_main}'
+
+  'editorWidget.background': '{bg_main}'
+  'editorWidget.foreground': '{fg_main}'
+
+  'extensionButton.background': '{bg_main}'
+  'extensionButton.foreground': '{fg_main}'
+
+  'gitDecoration.deletedResourceForeground': '{fg_main}'
+  'gitDecoration.ignoredResourceForeground': '{fg_dim}'
+  'gitDecoration.modifiedResourceForeground': '{fg_main}'
+  'gitDecoration.stageDeletedResourceForeground': '{fg_main}'
+  'gitDecoration.stageModifiedResourceForeground': '{fg_main}'
+  'gitDecoration.submoduleResourceForeground': '{fg_main}'
+  'gitDecoration.untrackedResourceForeground': '{fg_main}'
+
+  'input.background': '{bg_main}'
+  'input.border': '{border}'
+  'input.foreground': '{fg_main}'
+  'input.placeholderForeground': '{fg_dim}'
+
+  'keybindingLabel.border': '{fg_main}'
+  'keybindingLabel.bottomBorder': '{fg_main}'
+  'keybindingLabel.foreground': '{fg_main}'
+
+  'list.activeSelectionBackground': '{bg_main}'
+  'list.activeSelectionForeground': '{fg_main}'
+  'list.activeSelectionIconForeground': '{fg_main}'
+  'list.focusBackground': '{bg_main}'
+  'list.highlightForeground': '{fg_main}'
+  'list.hoverBackground': '{bg_main}'
+  'list.hoverForeground': '{fg_main}'
+  'list.inactiveSelectionBackground': '{bg_main}'
+
+  'notificationCenter.border': '{border}'
+  'notificationCenterHeader.background': '{bg_main}'
+  'notificationCenterHeader.foreground': '{fg_main}'
+
+  'notificationLink.foreground': '{fg_subtle}'
+  'notifications.background': '{bg_main}'
+  'notifications.border': '{border}'
+  'notifications.foreground': '{fg_main}'
+  'notificationsInfoIcon.foreground': '{fg_main}'
+  'notificationToast.border': '{fg_main}'
+
+  'panel.background': '{bg_main}'
+  'panel.border': '{border}'
+  'panelInput.border': '{border}'
+  'panelSection.border': '{border}'
+  'panelSectionHeader.background': '{bg_main}'
+  'panelTitle.activeBorder': '{bg_main}'
+  'panelTitle.activeForeground': '{fg_main}'
+  'panelTitle.inactiveForeground': '{fg_main}'
+
+  'peekView.border': '{fg_main}'
+  'peekViewEditor.background': '{bg_main}'
+  'peekViewTitle.background': '{bg_hl}'
+  'peekViewTitleDescription.foreground': '{fg_subtle}'
+  'peekViewTitleLabel.foreground': '{fg_main}'
+
+  'progressBar.background': '{fg_subtle}'
+
+  # 'quickInputList.focusBackground': '{fg_main}'
+  # 'quickInputList.focusForeground': '{bg_main}'
+
+  'sash.hoverBorder': '{fg_subtle}'
+
+  'scrollbarSlider.activeBackground': '{fg_dim}'
+  'scrollbarSlider.background': '{fg_dim}'
+  'scrollbarSlider.hoverBackground': '{fg_dim}'
+
+  'settings.checkboxBackground': '{bg_main}'
+  'settings.checkboxBorder': '{border}'
+  'settings.checkboxForeground': '{fg_main}'
+  'settings.dropdownBackground': '{bg_main}'
+  'settings.dropdownBorder': '{border}'
+  'settings.dropdownForeground': '{fg_main}'
+  'settings.dropdownListBorder': '{border}'
+  'settings.focusedRowBackground': '{bg_main}'
+  'settings.headerForeground': '{fg_main}'
+  'settings.modifiedItemIndicator': '{fg_dim}'
+  'settings.rowHoverBackground': '{bg_main}'
+  'settings.textInputBackground': '{bg_main}'
+
+  'sideBar.background': '{bg_main}'
+  'sideBar.border': '{border}'
+  'sideBar.foreground': '{fg_main}'
+
+  'sideBarSectionHeader.background': '{bg_main}'
+  'sideBarSectionHeader.border': '{bg_main}'
+  'sideBarSectionHeader.foreground': '{fg_main}'
+
+  'sideBySideEditor.horizontalBorder': '{border}'
+  'sideBySideEditor.verticalBorder': '{border}'
+
+  'statusBar.background': '{bg_main}'
+  'statusBar.border': '{border}'
+  'statusBar.debuggingBackground': '{red_1}'
+  'statusBar.debuggingForeground': '{fg_main}'
+  'statusBar.foreground': '{fg_main}'
+  'statusBar.noFolderBackground': '{bg_hl}'
+  'statusBar.noFolderForeground': '{fg_main}'
+
+  'statusBarItem.errorBackground': '{red_2}'
+  'statusBarItem.errorForeground': '{black_1}'
+  'statusBarItem.prominentBackground': '{bg_main}'
+  'statusBarItem.prominentForeground': '{fg_main}'
+  'statusBarItem.remoteBackground': '{bg_hl}'
+  'statusBarItem.remoteForeground': '{fg_main}'
+  'statusBarItem.warningBackground': '{orange_2}'
+  'statusBarItem.warningForeground': '{black_1}'
+
+  'symbolIcon.arrayForeground': '{fg_main}'
+  'symbolIcon.booleanForeground': '{fg_main}'
+  'symbolIcon.classForeground': '{fg_main}'
+  'symbolIcon.colorForeground': '{fg_main}'
+  'symbolIcon.constantForeground': '{fg_main}'
+  'symbolIcon.constructorForeground': '{fg_main}'
+  'symbolIcon.enumeratorForeground': '{fg_main}'
+  'symbolIcon.enumeratorMemberForeground': '{fg_main}'
+  'symbolIcon.eventForeground': '{fg_main}'
+  'symbolIcon.fieldForeground': '{fg_main}'
+  'symbolIcon.fileForeground': '{fg_main}'
+  'symbolIcon.folderForeground': '{fg_main}'
+  'symbolIcon.functionForeground': '{fg_main}'
+  'symbolIcon.interfaceForeground': '{fg_main}'
+  'symbolIcon.keyForeground': '{fg_main}'
+  'symbolIcon.keywordForeground': '{fg_main}'
+  'symbolIcon.methodForeground': '{fg_main}'
+  'symbolIcon.moduleForeground': '{fg_main}'
+  'symbolIcon.namespaceForeground': '{fg_main}'
+  'symbolIcon.nullForeground': '{fg_main}'
+  'symbolIcon.numberForeground': '{fg_main}'
+  'symbolIcon.objectForeground': '{fg_main}'
+  'symbolIcon.operatorForeground': '{fg_main}'
+  'symbolIcon.packageForeground': '{fg_main}'
+  'symbolIcon.propertyForeground': '{fg_main}'
+  'symbolIcon.referenceForeground': '{fg_main}'
+  'symbolIcon.snippetForeground': '{fg_main}'
+  'symbolIcon.stringForeground': '{fg_main}'
+  'symbolIcon.structForeground': '{fg_main}'
+  'symbolIcon.textForeground': '{fg_main}'
+  'symbolIcon.typeParameterForeground': '{fg_main}'
+  'symbolIcon.unitForeground': '{fg_main}'
+  'symbolIcon.variableForeground': '{fg_main}'
+
+  'tab.activeBackground': '{bg_main}'
+  'tab.activeBorder': '{bg_main}'
+  'tab.activeBorderTop': '{border}'
+  'tab.activeForeground': '{fg_main}'
+  'tab.border': '{border}'
+  'tab.hoverBackground': '{bg_main}'
+  'tab.hoverForeground': '{fg_main}'
+  'tab.inactiveBackground': '{bg_main}'
+  'tab.inactiveForeground': '{fg_main}'
+  'tab.inactiveModifiedBorder': '{bg_main}'
+  'tab.lastPinnedBorder': '{border}'
+  'tab.unfocusedActiveBackground': '{bg_main}'
+  'tab.unfocusedActiveForeground': '{fg_main}'
+  'tab.unfocusedInactiveForeground': '{fg_main}'
+
+  'terminal.ansiBlack': '{black_1}'
+  'terminal.ansiBlue': '{blue_1}'
+  'terminal.ansiBrightBlack': '{fg_dim}'
+  'terminal.ansiBrightBlue': '{blue_2}'
+  'terminal.ansiBrightCyan': '{cyan_2}'
+  'terminal.ansiBrightGreen': '{green_2}'
+  'terminal.ansiBrightMagenta': '{magenta_2}'
+  'terminal.ansiBrightRed': '{red_2}'
+  'terminal.ansiBrightWhite': '{white_2}'
+  'terminal.ansiBrightYellow': '{yellow_2}'
+  'terminal.ansiCyan': '{cyan_1}'
+  'terminal.ansiGreen': '{green_1}'
+  'terminal.ansiMagenta': '{magenta_1}'
+  'terminal.ansiRed': '{red_1}'
+  'terminal.ansiWhite': '{bg_hl}'
+  'terminal.ansiYellow': '{yellow_1}'
+  'terminal.background': '{bg_main}'
+  'terminal.border': '{fg_main}'
+  'terminal.foreground': '{fg_main}'
+  'terminal.tab.activeBorder': '{fg_main}'
+  'terminalCommandDecoration.defaultBackground': '{fg_main}'
+  'terminalCommandDecoration.successBackground': '{fg_subtle}'
+
+  'textBlockQuote.background': '{bg_main}'
+  'textBlockQuote.border': '{border}'
+  'textCodeBlock.background': '{bg_main}'
+  'textLink.activeForeground': '{fg_main}'
+  'textLink.foreground': '{fg_subtle}'
+  'textPreformat.background': '{bg_main}'
+  'textPreformat.foreground': '{fg_main}'
+
+  'textSeparator.foreground': '{fg_main}'
+
+  'titleBar.activeBackground': '{bg_main}'
+  'titleBar.activeForeground': '{fg_main}'
+  'titleBar.border': '{bg_main}'
+  'titleBar.inactiveBackground': '{bg_main}'
+  'titleBar.inactiveForeground': '{fg_dim}'
+
+  'tree.inactiveIndentGuidesStroke': '{fg_faint}'
+  'tree.indentGuidesStroke': '{fg_dim}'
+  
+  'window.activeBorder': '{bg_main}'
+  'window.inactiveBorder': '{bg_main}'

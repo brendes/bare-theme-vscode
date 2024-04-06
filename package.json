@@ -1,0 +1,55 @@
+{
+  "name": "bare-theme",
+  "displayName": "bare theme",
+  "description": "",
+  "publisher": "brendes",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.59.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "keywords": [
+    "monochrome",
+    "minimal",
+    "clean",
+    "eink",
+    "e-ink",
+    "contrast"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "bare milk",
+        "uiTheme": "hc-light",
+        "path": "./themes/bare-milk-color-theme.json"
+      },
+      {
+        "label": "bare sun",
+        "uiTheme": "hc-light",
+        "path": "./themes/bare-sun-color-theme.json"
+      },
+      {
+        "label": "bare acme",
+        "uiTheme": "hc-light",
+        "path": "./themes/bare-acme-color-theme.json"
+      },
+      {
+        "label": "bare dark",
+        "uiTheme": "hc-black",
+        "path": "./themes/bare-dark-color-theme.json"
+      },
+      {
+        "label": "bare nord",
+        "uiTheme": "hc-black",
+        "path": "./themes/bare-nord-color-theme.json"
+      },
+      {
+        "label": "bare red",
+        "uiTheme": "hc-black",
+        "path": "./themes/bare-red-color-theme.json"
+      }
+    ]
+  }
+}
