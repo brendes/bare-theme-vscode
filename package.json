@@ -1,7 +1,7 @@
 {
   "name": "bare-theme",
   "displayName": "bare theme",
-  "description": "",
+  "description": "Monochrome themes for e-ink displays",
   "publisher": "brendes",
   "version": "0.0.1",
   "engines": {
