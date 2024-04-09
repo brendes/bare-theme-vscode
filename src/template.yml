@@ -251,7 +251,7 @@ colors:
   'statusBar.background': '{bg_main}'
   'statusBar.border': '{border}'
   'statusBar.debuggingBackground': '{red_1}'
-  'statusBar.debuggingForeground': '{fg_main}'
+  'statusBar.debuggingForeground': '{black_1}'
   'statusBar.foreground': '{fg_main}'
   'statusBar.noFolderBackground': '{bg_hl}'
   'statusBar.noFolderForeground': '{fg_main}'
